@@ -1,0 +1,76 @@
+.grid-wrapper{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black; 
+    grid-template-columns: 4fr 4fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr 1fr;
+    grid-template-areas:
+        "header  header   nav1"
+        "content content1 nav2"
+        "content content1 nav3"
+        "footer  footer   footer";
+        
+}
+
+.header{
+    grid-area: header;
+    background-color: lightgrey;
+    margin: 1vh;
+    padding: 5px;
+    border: 8px;
+    border-radius: 2px;
+
+}
+
+.content{
+    grid-area: content;
+    background-color: lightgrey;
+    display: block;
+    margin: 1vh;
+    padding: 5px;
+    border: 8px;
+    border-radius: 2px;
+}
+
+.content1{
+    grid-area: content1;
+    background-color: lightgrey;
+    margin: 1vh;
+    padding: 5px;
+}
+
+.nav1{
+    grid-area: nav1;
+    background-color: lightgrey;
+    margin-top: 1vh;
+    margin-right: 1vh;
+    padding: 5px;
+    border: 8px;
+}
+
+.nav2{
+    grid-area: nav2;
+    background-color: lightgrey;
+    margin-right: 1vh;
+    padding: 5px;
+}
+
+.nav3{
+    grid-area: nav3;
+    background-color: lightgrey;
+    margin-bottom: 1vh;
+    margin-right: 1vh;
+    padding: 5px;
+    border: 8px;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lightgrey;
+    margin-bottom: 1vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    padding: 5px;
+}
